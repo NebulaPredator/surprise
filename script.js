@@ -1,12 +1,25 @@
 function playWish() {
   const balloonsContainer = document.getElementById('balloons');
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 30; i++) {
     const balloon = document.createElement("div");
     balloon.className = "balloon";
-    balloon.style.left = `${Math.random() * 100}%`;
-    balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
-    balloon.style.animationDelay = `${Math.random() * 3}s`;
+
+    // Random horizontal position
+    balloon.style.left = `${Math.random() * 95}%`;
+
+    // Random pastel color using HSL
+    const hue = Math.floor(Math.random() * 360);
+    balloon.style.backgroundColor = `hsl(${hue}, 100%, 75%)`;
+
+    // Random size
+    const size = 40 + Math.random() * 20;
+    balloon.style.width = `${size}px`;
+    balloon.style.height = `${size * 1.5}px`;
+
+    // Random animation delay
+    balloon.style.animationDelay = `${Math.random() * 4}s`;
+
     balloonsContainer.appendChild(balloon);
   }
 }
