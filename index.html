@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎉 Happy Birthday, Jason! 🎂</h1>
+  <p class="main-message">Wishing you a day filled with love, laughter, cake, and all the happiness in the world! You're the best friend anyone could ask for. 💖</p>
+
+  <button onclick="playWish()">Click to Play Birthday Wish 🎶</button>
+
+  <div class="balloons" id="balloons"></div>
+
+  <div class="poem">
+    <h2>🌟 For the Bond We Share 🌟</h2>
+    <p>You are the lighthouse in my storm-tossed sea,<br>
+    The steady rhythm to my wild melody.<br>
+    Like rivers carving through ancient stone,<br>
+    Your loyalty has shaped the bedrock I've known.</p>
+
+    <p>We're twin flames in life's flickering night,<br>
+    Two constellations burning bright.<br>
+    You're both the shield and the sword I wield,<br>
+    The harvest moon to my barren field.</p>
+
+    <p>Like wine that deepens with passing years,<br>
+    Our laughter matches, yet never veers.<br>
+    You're the North Star when I lose my way,<br>
+    The summer dawn to my winter's day.</p>
+
+    <p>A mirror showing my truest face,<br>
+    Yet still embracing every flawed trace.<br>
+    The shelter when my wings grow tired,<br>
+    The spark that lights my dormant fire.</p>
+
+    <p>So here's to us — no mere friendship this,<br>
+    But alchemy of souls, eternal bliss.<br>
+    For we're not just friends, we're forces combined,<br>
+    A love like ours was by destiny designed. 🌌</p>
+  </div>
+
+  <audio id="audio" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+
+  <script>
+    function playWish() {
+      document.getElementById('audio').play();
+      for (let i = 0; i < 20; i++) {
+        const balloon = document.createElement("div");
+        balloon.className = "balloon";
+        balloon.style.left = `${Math.random() * 100}%`;
+        balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        balloon.style.animationDelay = `${Math.random() * 3}s`;
+        document.getElementById("balloons").appendChild(balloon);
+      }
+    }
+  </script>
+</body>
+</html>
