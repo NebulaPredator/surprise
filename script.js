@@ -1,8 +1,5 @@
 function playWish() {
-  const audio = document.getElementById('audio');
   const balloonsContainer = document.getElementById('balloons');
-
-  audio.play();
 
   for (let i = 0; i < 20; i++) {
     const balloon = document.createElement("div");
@@ -13,3 +10,11 @@ function playWish() {
     balloonsContainer.appendChild(balloon);
   }
 }
+
+// Autoplay fallback
+window.addEventListener("click", () => {
+  const music = document.getElementById("bg-music");
+  if (music.paused) {
+    music.play().catch(() => {});
+  }
+}, { once: true });
