@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>🎉 Happy Birthday, Jason! 🎂</h1>
+  <h1>🎉 Happy Birthday, Bestie! 🎂</h1>
   <p class="main-message">Wishing you a day filled with love, laughter, cake, and all the happiness in the world! You're the best friend anyone could ask for. 💖</p>
 
-  <button onclick="playWish()">Click to Play Birthday Wish 🎶</button>
+  <button onclick="playWish()">Click to Play Surprise 🎈</button>
 
   <div class="balloons" id="balloons"></div>
 
-   <div class="poem">
+  <div class="poem">
     <h2>🌟 For the Bond We Share 🌟</h2>
     <p>You are the lighthouse in my storm-tossed sea,<br>
     The steady rhythm to my wild melody.<br>
@@ -42,7 +43,11 @@
     A love like ours was by destiny designed. 🌌</p>
   </div>
 
-  <audio id="audio" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+  <!-- Background Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <script src="script.js"></script>
 </body>
