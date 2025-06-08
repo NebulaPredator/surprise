@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  background: linear-gradient(to right, #111111, #2c2c2c); /* Black to dark grey */
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-align: center;
@@ -13,8 +13,8 @@ body {
 h1 {
   font-size: 3.5rem;
   margin-top: 60px;
-  color: #fff;
-  text-shadow: 2px 2px 10px #ff6f91;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #ff00c8;
   animation: pop 1s ease-in-out;
 }
 
@@ -23,7 +23,7 @@ h1 {
   font-size: 1.4rem;
   padding: 0 20px;
   margin-top: 20px;
-  color: #fff5f5;
+  color: #eeeeee;
 }
 
 /* Button Styling */
@@ -31,17 +31,17 @@ button {
   margin-top: 40px;
   padding: 15px 40px;
   font-size: 1.2rem;
-  background: linear-gradient(135deg, #06d6a0, #118ab2);
+  background: linear-gradient(135deg, #ff4d6d, #6c5ce7);
   border: none;
   border-radius: 30px;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 button:hover {
-  background: linear-gradient(135deg, #118ab2, #06d6a0);
+  background: linear-gradient(135deg, #6c5ce7, #ff4d6d);
   transform: scale(1.05);
 }
 
@@ -82,9 +82,9 @@ button:hover {
   max-width: 800px;
   margin: 80px auto 40px auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
   font-size: 1.1rem;
   line-height: 1.8;
   text-align: left;
@@ -101,7 +101,7 @@ button:hover {
 
 .poem p {
   margin-bottom: 20px;
-  color: #fff9f9;
+  color: #eeeeee;
 }
 
 /* Animation for h1 */
