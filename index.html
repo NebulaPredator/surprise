@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Surprise!</title>
+  <title>Happy Birthday!</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>🎉 Happy Birthday, Jason! 🎂</h1>
+  <h1>🎉 Happy Birthday, Bestie! 🎂</h1>
   <p class="main-message">Wishing you a day filled with love, laughter, cake, and all the happiness in the world! You're the best friend anyone could ask for. 💖</p>
 
   <button onclick="playWish()">Click to Play Birthday Wish 🎶</button>
 
   <div class="balloons" id="balloons"></div>
 
+  <!-- Poem Section -->
   <div class="poem">
     <h2>🌟 For the Bond We Share 🌟</h2>
     <p>You are the lighthouse in my storm-tossed sea,<br>
@@ -44,18 +45,6 @@
 
   <audio id="audio" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
 
-  <script>
-    function playWish() {
-      document.getElementById('audio').play();
-      for (let i = 0; i < 20; i++) {
-        const balloon = document.createElement("div");
-        balloon.className = "balloon";
-        balloon.style.left = `${Math.random() * 100}%`;
-        balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
-        balloon.style.animationDelay = `${Math.random() * 3}s`;
-        document.getElementById("balloons").appendChild(balloon);
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
