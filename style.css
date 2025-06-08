@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #111111, #2c2c2c); /* Black to dark grey */
+  background: linear-gradient(to right, #111111, #2c2c2c);
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-align: center;
@@ -61,15 +61,9 @@ button:hover {
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0) rotate(0);
-  }
-  50% {
-    transform: translateY(-600px) rotate(10deg);
-  }
-  100% {
-    transform: translateY(0) rotate(-10deg);
-  }
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-600px) rotate(10deg); }
+  100% { transform: translateY(0) rotate(-10deg); }
 }
 
 .poem {
@@ -99,12 +93,6 @@ button:hover {
 }
 
 @keyframes pop {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
